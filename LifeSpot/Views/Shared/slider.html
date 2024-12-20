@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Static/CSS/index.css">
+    <title>Слайдер</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide fade">
+                <img src="/Images/img1.jpg" alt="Слайд 1">
+                <div class="caption">Слайд 1</div>
+            </div>
+            <div class="slide fade">
+                <img src="/Images/img2.jpg" alt="Слайд 2">
+                <div class="caption">Слайд 2</div>
+            </div>
+            <div class="slide fade">
+                <img src="/Images/img3.jpg" alt="Слайд 3">
+                <div class="caption">Слайд 3</div>
+            </div>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <script src="../../Static/JS/slider.js"></script>
+</body>
+</html>

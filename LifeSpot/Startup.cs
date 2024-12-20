@@ -23,6 +23,7 @@ namespace LifeSpot
 
             string footerHtml = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Views", "Shared", "footer.html"));
             string sideBarHtml = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Views", "Shared", "sideBar.html"));
+            string slider = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Views", "Shared", "slider.html"));
 
             app.UseEndpoints(endpoints =>
             {
@@ -67,7 +68,8 @@ namespace LifeSpot
 
                     var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
                         .Replace("<!--SIDEBAR-->", sideBarHtml)
-                        .Replace("<!--FOOTER-->", footerHtml);
+                        .Replace("<!--FOOTER-->", footerHtml)
+                        .Replace("<!--SLIDER-->", slider);
 
                     await context.Response.WriteAsync(html.ToString());
                 });

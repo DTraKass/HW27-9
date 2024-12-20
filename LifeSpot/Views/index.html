@@ -3,63 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
-    <link href="C:/Users/samsung/Desktop/LifeSpot-main/LifeSpot/Static/CSS/index.css" rel="stylesheet" type="text/css">
-    <script src="C:/Users/samsung/Desktop/LifeSpot-main/LifeSpot/Static/JS/index.js"></script>
+    <link href="Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script src="Static/JS/index.js" defer></script>
     <script>
         setTimeout(() =>
             alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
             30000);
     </script>
     <script>
-        filterContent();
-
-        sessionLog();
-        checkAge();
-        handleSession()
+        document.addEventListener('DOMContentLoaded', () => {
+            filterContent();
+            sessionLog();
+            handleSession();
+        });
     </script>
 </head>
+<!--SIDEBAR-->
 <body>
-
     <div class="block">
 
         <header id="header-index">
             <div class="cap">
                 <h1>LifeSpot - прямые трансляции с улиц</h1>
                 <p>Покажем, что происходит прямо сейчас</p>
-
             </div>
             <form>
                 <input type="text" id="input" class="search" placeholder="Поиск...">
             </form>
-            
         </header>
-            <div class="video-container">
-                <iframe width="600" height="400" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
-            </div>
-            <div class="video-container">
-                <iframe width="600" height="400" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
-            </div>
-            <div class="video-container">
-                <iframe width="600" height="400" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="video-title">Лондон, автобусный маршрут</h3>
-            </div>
+
+        <div class="video-container">
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
         </div>
 
-    <aside id="sidebar">
-        <div class="navbar">
-            <p>Все трансляции</p>
-            <p>О проекте</p>
+        <div class="video-container">
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
         </div>
-    </aside>
-    <footer>
-        <div class="footerCom">
-            <p>Lifespot - прямые трансляции</p>
-            <p>Обратная свзяь - 12345qwert@gmail.com</p>
-            <p>Bсе права защищены</p>
-        </div>
-    </footer>
 
+        <div class="video-container">
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Лондон, автобусный маршрут</h3>
+        </div>
+    </div>
 </body>
+<!--FOOTER-->
 </html>

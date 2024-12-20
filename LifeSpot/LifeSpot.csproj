@@ -6,6 +6,7 @@
 
     <ItemGroup>
       <Folder Include="Static\JS\" />
+      <Folder Include="Images\" />
     </ItemGroup>
 
 </Project>
